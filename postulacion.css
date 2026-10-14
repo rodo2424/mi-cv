@@ -1,0 +1,40 @@
+.back-link{font-size:12px;text-decoration:none}
+.kit-page{max-width:1000px}
+.kit-header{border-bottom:5px double var(--ink);padding-bottom:22px}
+.kit-header .eyebrow{color:var(--accent);margin-top:0}
+.kit-header h1{font-size:43px;line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
+.kit-header>p:last-child{font:17px/1.7 Georgia,serif;color:var(--muted);max-width:740px;margin-bottom:0}
+.personalize{background:var(--wash);border-top:2px solid var(--accent);padding:22px;margin:26px 0 34px}
+.personalize h2{font-size:23px;margin-bottom:18px}
+.field-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.field-grid label{display:block;font-size:12px;font-weight:600;margin-bottom:7px}
+.field-grid input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:2px;padding:9px;background:var(--paper);color:var(--ink);font:14px Arial,sans-serif}
+.field-grid input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.personalize>p{color:var(--muted);font-size:12px;margin-bottom:0}
+.kit-section-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid var(--ink);padding-bottom:12px;margin-bottom:20px}
+.kit-section-heading h2{margin:0;font-size:28px;color:var(--accent-deep)}
+.kit-actions,.email-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.kit-actions button,.kit-actions a,.email-actions button,.email-actions a,#copy-email,#copy-subject{font-size:12px;color:var(--accent-deep);border:1px solid var(--line);background:var(--paper);padding:8px 11px;text-decoration:none;border-radius:2px}
+.kit-actions button:hover,.kit-actions a:hover,.email-actions button:hover{border-color:var(--accent)}
+.letter-paper{background:#fffef9;border:1px solid var(--line);padding:36px 42px;box-shadow:0 5px 20px #29272308;font:16px/1.7 Georgia,serif;overflow-wrap:anywhere}
+.letter-paper header{border-bottom:2px solid var(--accent);padding-bottom:16px;margin-bottom:24px}
+.letter-paper header h2{font-size:28px;margin-bottom:7px}
+.letter-paper header>p{font:13px/1.5 Arial,sans-serif;color:var(--accent-deep);margin:6px 0}
+.letter-paper header .letter-contact{font-size:12px;color:var(--muted)}
+.letter-to{font:12px/1.5 Arial,sans-serif;color:var(--muted);margin-bottom:8px}
+.letter-paper h3{font-size:22px;color:var(--accent-deep);margin-bottom:22px}
+#letter-body p,#email-body p{white-space:pre-line;margin:0 0 18px}
+#letter-body p:last-child{margin-bottom:0}
+.email-section{margin-top:36px}
+.email-paper{padding:24px;background:var(--wash);overflow-wrap:anywhere}
+.subject{display:flex;flex-wrap:wrap;gap:7px 12px;font-size:13px;border-bottom:1px solid var(--line);padding-bottom:16px;margin:0 0 20px;align-items:center}
+.subject>span{flex:1;min-width:180px}
+#copy-subject{padding:5px 8px;font-size:11px}
+#email-body{font-size:14px;line-height:1.7}
+#email-body p:last-child{margin-bottom:0}
+.email-actions{margin-top:16px}
+.email-actions button{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.email-help{font-size:12px;color:var(--muted);max-width:740px}
+@media(max-width:760px){.back-link{order:3;width:100%;text-align:center}.kit-header h1{font-size:34px}.kit-page{padding:24px 20px}.personalize{padding:18px}.field-grid{grid-template-columns:1fr;gap:12px}.kit-section-heading h2{font-size:25px}.letter-paper{padding:24px 20px;font-size:15px}.letter-paper header h2{font-size:25px}.letter-paper h3{font-size:21px}.email-paper{padding:18px}}
+@media(max-width:360px){.nav-actions{gap:7px}.nav-actions>button:not(#language){max-width:136px;line-height:1.4}}
+@media print{@page{size:A4;margin:18mm}body{background:white}.kit-page{border:0;box-shadow:none;margin:0;padding:0;max-width:none}.kit-header,.personalize,.kit-section-heading,.email-section,#status{display:none}.letter-section{margin:0}.letter-paper{background:white;border:0;box-shadow:none;padding:0;font-size:11pt;line-height:1.6}.letter-paper header h2{font-size:21pt}.letter-paper header>p{font-size:9pt}.letter-paper header .letter-contact{font-size:9pt}.letter-paper h3{font-size:14pt}.letter-to{font-size:9pt}#letter-body p{margin-bottom:14px}}
