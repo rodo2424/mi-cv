@@ -58,6 +58,124 @@ const locales = {
   studies:[['Pós-graduação','Mestrado em Data Science e IA','Em andamento'],['Graduação','Engenharia Industrial','2022'],['Diplomado','Lean Six Sigma','2023']]
  }
 };
+const narratives={
+  "es": {
+    "headline": "De la operación diaria a una visión nacional.",
+    "intro": "Mi recorrido empezó en 2021, entre proyectos de producto, coordinación y comunicación. En 2023 entré en la operación logística: primero en seguridad, después en gestión de flotas. Hoy, en Embol, analizo la distribución a nivel nacional y desarrollo herramientas para seguir lo que ocurre en la operación.",
+    "storyTitle": "La crónica de mi trayectoria",
+    "experienceIntro": "Cuatro etapas conectan mis primeras experiencias con el trabajo que hago hoy. Cada una amplía la mirada de la anterior.",
+    "timelineLabel": "Recorrer los capítulos de mi trayectoria",
+    "chapterLabel": "Capítulo",
+    "chapters": [
+      [
+        "2021 — 2022",
+        "Los primeros proyectos",
+        "Producto · coordinación · comunicación",
+        "Mis primeras experiencias fueron distintas entre sí, pero tuvieron algo en común: organizar el trabajo y entender a quién iba dirigido. Pasé por proyectos de responsabilidad social, una academia internacional de trading y el desarrollo de un producto alimenticio."
+      ],
+      [
+        "2023 — 2025",
+        "La operación en terreno",
+        "Seguridad · flotas · seguimiento",
+        "La logística se volvió el centro de mi trabajo. En CBN apoyé la seguridad del centro de distribución; después, en Embol, trabajé con mantenimiento, programación de viajes y seguimiento de la flota. Los datos empezaron a acompañar decisiones concretas de la operación."
+      ],
+      [
+        "2025 — feb. 2026",
+        "Rutas y decisiones",
+        "Distribución · planificación · Power BI",
+        "Como asistente de distribución, reuní planificación y análisis para apoyar el cambio del modelo de entrega en La Paz y El Alto. El trabajo combinaba rutas, cargas y tableros: distintas formas de entender y organizar una misma operación."
+      ],
+      [
+        "mar. 2026 — Presente",
+        "Una visión nacional",
+        "Datos · indicadores · coordinación",
+        "Hoy mi trabajo abarca la distribución a nivel nacional. Estandarizo información logística, desarrollo tableros y doy seguimiento a indicadores, manteniendo la conexión con los equipos y los desafíos de la operación diaria."
+      ]
+    ],
+    "educationIntro": "Mi formación acompaña este recorrido: Ingeniería Industrial, un diplomado en Lean Six Sigma y, actualmente, una maestría en Data Science e Inteligencia Artificial.",
+    "nextLabel": "La siguiente etapa",
+    "nextTitle": "Seguir aprendiendo, cerca de la operación.",
+    "nextText": "Quiero profundizar en automatización y modelos predictivos para trabajar con los problemas que ya conozco desde la logística. Esa es la conexión que busco entre mi experiencia y la maestría que curso hoy."
+  },
+  "en": {
+    "headline": "From daily operations to a national perspective.",
+    "intro": "My journey began in 2021, with projects in product development, coordination and communications. In 2023, I moved into logistics: first safety, then fleet management. Today, at Embol, I analyse nationwide distribution and develop tools to track what is happening in operations.",
+    "storyTitle": "The story of my career",
+    "experienceIntro": "Four chapters connect my earliest experiences with the work I do today. Each one builds on the perspective of the last.",
+    "timelineLabel": "Explore the chapters of my career",
+    "chapterLabel": "Chapter",
+    "chapters": [
+      [
+        "2021 — 2022",
+        "The first projects",
+        "Product · coordination · communications",
+        "My early roles differed, but they shared a common thread: organising work and understanding who it was for. I worked on social responsibility projects, at an international trading academy and on the development of a food product."
+      ],
+      [
+        "2023 — 2025",
+        "Inside the operation",
+        "Safety · fleets · tracking",
+        "Logistics became the focus of my work. At CBN, I supported distribution centre safety; later, at Embol, I worked on maintenance, trip scheduling and fleet tracking. Data began to support practical operational decisions."
+      ],
+      [
+        "2025 — Feb 2026",
+        "Routes and decisions",
+        "Distribution · planning · Power BI",
+        "As a distribution assistant, I brought planning and analysis together to support the change in the delivery model in La Paz and El Alto. The work combined routes, loads and dashboards: different ways of understanding and organising the same operation."
+      ],
+      [
+        "Mar 2026 — Present",
+        "A national perspective",
+        "Data · indicators · coordination",
+        "Today, my work covers nationwide distribution. I standardise logistics information, develop dashboards and monitor indicators, staying connected to the teams and the challenges of daily operations."
+      ]
+    ],
+    "educationIntro": "My education supports this journey: Industrial Engineering, a diploma in Lean Six Sigma and, currently, a master’s degree in Data Science and Artificial Intelligence.",
+    "nextLabel": "The next chapter",
+    "nextTitle": "Keep learning, stay close to operations.",
+    "nextText": "I want to deepen my knowledge of automation and predictive models to work on problems I already know through logistics. That is the connection I am looking for between my experience and my current master’s studies."
+  },
+  "pt": {
+    "headline": "Da operação diária a uma visão nacional.",
+    "intro": "Minha trajetória começou em 2021, com projetos de produto, coordenação e comunicação. Em 2023, entrei na operação logística: primeiro na segurança, depois na gestão de frotas. Hoje, na Embol, analiso a distribuição em âmbito nacional e desenvolvo ferramentas para acompanhar o que acontece na operação.",
+    "storyTitle": "A história da minha trajetória",
+    "experienceIntro": "Quatro etapas conectam minhas primeiras experiências ao trabalho que faço hoje. Cada uma amplia a perspectiva da anterior.",
+    "timelineLabel": "Explorar os capítulos da minha trajetória",
+    "chapterLabel": "Capítulo",
+    "chapters": [
+      [
+        "2021 — 2022",
+        "Os primeiros projetos",
+        "Produto · coordenação · comunicação",
+        "Minhas primeiras experiências foram diferentes entre si, mas tinham algo em comum: organizar o trabalho e entender para quem ele era feito. Passei por projetos de responsabilidade social, uma academia internacional de trading e o desenvolvimento de um produto alimentício."
+      ],
+      [
+        "2023 — 2025",
+        "Dentro da operação",
+        "Segurança · frotas · acompanhamento",
+        "A logística se tornou o centro do meu trabalho. Na CBN, apoiei a segurança do centro de distribuição; depois, na Embol, trabalhei com manutenção, programação de viagens e acompanhamento da frota. Os dados passaram a apoiar decisões concretas da operação."
+      ],
+      [
+        "2025 — fev. 2026",
+        "Rotas e decisões",
+        "Distribuição · planejamento · Power BI",
+        "Como assistente de distribuição, reuni planejamento e análise para apoiar a mudança do modelo de entrega em La Paz e El Alto. O trabalho combinava rotas, cargas e painéis: formas diferentes de entender e organizar a mesma operação."
+      ],
+      [
+        "mar. 2026 — Atual",
+        "Uma visão nacional",
+        "Dados · indicadores · coordenação",
+        "Hoje meu trabalho abrange a distribuição em âmbito nacional. Padronizo informações logísticas, desenvolvo painéis e acompanho indicadores, mantendo a conexão com as equipes e os desafios da operação diária."
+      ]
+    ],
+    "educationIntro": "Minha formação acompanha essa trajetória: Engenharia Industrial, um diplomado em Lean Six Sigma e, atualmente, um mestrado em Data Science e Inteligência Artificial.",
+    "nextLabel": "A próxima etapa",
+    "nextTitle": "Continuar aprendendo, perto da operação.",
+    "nextText": "Quero aprofundar meus conhecimentos em automação e modelos preditivos para trabalhar com problemas que já conheço pela logística. É essa conexão que busco entre minha experiência e o mestrado que curso hoje."
+  }
+};
+Object.keys(narratives).forEach(lang=>Object.assign(locales[lang],narratives[lang]));
+const chapterRoles=[[6,5,4],[3,2],[1],[0]];
 const companies=['Embol S.A.','Embol S.A.','Embol S.A.','CBN','Nutrimentos Maybo S.R.L.','Arbitriumfx','Universidad Católica Boliviana'];
 const institutions=['Universidad Autónoma Gabriel René Moreno','Universidad Católica Boliviana “San Pablo”','Universidad Privada Boliviana'];
 const categories=[['data','operations'],['data','operations'],['operations'],['data','operations'],[],[],['data']];
@@ -67,7 +185,16 @@ try { const saved=localStorage.getItem('cv-language'); if(languageOrder.includes
 let filter='all', skill=0, toastTimer, printState;
 function el(tag,text,className){const node=document.createElement(tag); if(text!==undefined) node.textContent=text; if(className) node.className=className; return node;}
 function notify(message){clearTimeout(toastTimer);document.getElementById('status').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('status').textContent='';},3500);}
-function filterRoles(){let count=0;document.querySelectorAll('.role').forEach((node,i)=>{node.hidden=filter!=='all'&&!categories[i].includes(filter);if(!node.hidden)count++;});document.getElementById('result-count').textContent=`${count} ${locales[language].count}`;}
+function filterRoles(){
+ let count=0;
+ document.querySelectorAll('.role').forEach(node=>{
+  const index=Number(node.dataset.roleIndex);
+  node.hidden=filter!=='all'&&!categories[index].includes(filter);
+  if(!node.hidden)count++;
+ });
+ document.querySelectorAll('.chapter').forEach(node=>{node.hidden=![...node.querySelectorAll('.role')].some(role=>!role.hidden);});
+ document.getElementById('result-count').textContent=`${count} ${locales[language].count}`;
+}
 function renderSkill(){const t=locales[language],box=document.getElementById('skill-detail');box.replaceChildren(el('h3',t.skillNames[skill]),el('p',t.skillText[skill]));document.querySelectorAll('#skill-buttons button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===skill)));}
 function render(){
  const t=locales[language];document.documentElement.lang=language;document.title=`Rodrigo López Flores | ${t.profession}`;document.querySelector('meta[name=description]').content=t.intro;
@@ -82,19 +209,56 @@ function render(){
  languageButton.setAttribute('aria-label',`${languageLabels[language]}. ${t.next}`);
  languageButton.title=`${languageLabels[language]} · ${t.next}`;
  const filters=document.getElementById('filters');filters.replaceChildren();['all','data','operations'].forEach((key,i)=>{const b=el('button',t.filters[i]);b.type='button';b.setAttribute('aria-pressed',String(filter===key));b.addEventListener('click',()=>{filter=key;filters.querySelectorAll('button').forEach((n,j)=>n.setAttribute('aria-pressed',String(i===j)));filterRoles();});filters.append(b);});
+ const timeline=document.getElementById('timeline');
+ timeline.setAttribute('aria-label',t.timelineLabel);
+ timeline.replaceChildren();
  const roles=document.getElementById('roles');
  roles.replaceChildren();
- t.roles.forEach((r,i)=>{
-  const article=el('article',undefined,'role');
-  const meta=el('div',undefined,'role-meta');
-  meta.append(el('strong',companies[i]),el('span',t.dates[i]),el('div',i===0?'Santa Cruz, Bolivia':i===5?t.usa:'La Paz, Bolivia'));
-  const body=el('div',undefined,'role-body');
-  body.append(el('h3',r[0]),el('p',r[1],'role-summary'));
-  const list=el('ul',undefined,'responsibilities');
-  r[2].forEach(text=>list.append(el('li',text)));
-  body.append(list);
-  article.append(meta,body);
-  roles.append(article);
+ t.chapters.forEach((chapter,chapterIndex)=>{
+  const chapterId=`chapter-${chapterIndex+1}`;
+  const milestone=el('li',undefined,'milestone');
+  const link=el('a');
+  link.href=`#${chapterId}`;
+  link.append(el('span',chapter[0],'milestone-date'),el('strong',chapter[1]),el('span',chapter[2],'milestone-focus'));
+  link.addEventListener('click',()=>{
+   filter='all';
+   filters.querySelectorAll('button').forEach((button,index)=>button.setAttribute('aria-pressed',String(index===0)));
+   filterRoles();
+   document.getElementById(chapterId).focus({preventScroll:true});
+  });
+  milestone.append(link);
+  timeline.append(milestone);
+  const section=el('div',undefined,`chapter${chapterIndex===3?' chapter-current':''}`);
+  section.id=chapterId;
+  section.tabIndex=-1;
+  const headingId=`${chapterId}-title`;
+  section.setAttribute('role','region');
+  section.setAttribute('aria-labelledby',headingId);
+  const heading=el('div',undefined,'chapter-heading');
+  const marker=el('span',String(chapterIndex+1).padStart(2,'0'),'chapter-number');
+  marker.setAttribute('aria-hidden','true');
+  const headingText=el('div');
+  headingText.append(el('p',`${t.chapterLabel} ${chapterIndex+1} · ${chapter[0]}`,'eyebrow'));
+  const title=el('h3',chapter[1]);
+  title.id=headingId;
+  headingText.append(title);
+  heading.append(marker,headingText);
+  section.append(heading,el('p',chapter[3],'chapter-narrative'));
+  chapterRoles[chapterIndex].forEach(i=>{
+   const r=t.roles[i];
+   const article=el('article',undefined,`role${i===0?' role-current':''}`);
+   article.dataset.roleIndex=i;
+   const meta=el('div',undefined,'role-meta');
+   meta.append(el('strong',companies[i]),el('span',t.dates[i]),el('div',i===0?'Santa Cruz, Bolivia':i===5?t.usa:'La Paz, Bolivia'));
+   const body=el('div',undefined,'role-body');
+   body.append(el('h4',r[0]),el('p',r[1],'role-summary'));
+   const list=el('ul',undefined,'responsibilities');
+   r[2].forEach(text=>list.append(el('li',text)));
+   body.append(list);
+   article.append(meta,body);
+   section.append(article);
+  });
+  roles.append(section);
  });
  filterRoles();
  const buttons=document.getElementById('skill-buttons');buttons.replaceChildren();t.skillNames.forEach((name,i)=>{const b=el('button',name);b.type='button';b.addEventListener('click',()=>{skill=i;renderSkill();});buttons.append(b);});renderSkill();
@@ -109,7 +273,7 @@ document.getElementById('language').addEventListener('click',event=>{
  notify(locales[language].changed);
 });
 document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('rodrilopez2498@gmail.com');notify(locales[language].copied);}catch{notify(locales[language].copyError);}});
-function preparePrint(){if(printState)return;printState=[...document.querySelectorAll('.role')].map(node=>({node,hidden:node.hidden}));printState.forEach(({node})=>{node.hidden=false;});}
+function preparePrint(){if(printState)return;printState=[...document.querySelectorAll('.role, .chapter')].map(node=>({node,hidden:node.hidden}));printState.forEach(({node})=>{node.hidden=false;});}
 function restorePrint(){if(!printState)return;printState.forEach(({node,hidden})=>{node.hidden=hidden;});printState=undefined;}
 window.addEventListener('beforeprint',preparePrint);window.addEventListener('afterprint',restorePrint);document.getElementById('print').addEventListener('click',()=>{preparePrint();window.print();});
 render();
