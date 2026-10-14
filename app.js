@@ -73,7 +73,14 @@ function render(){
  const t=locales[language];document.documentElement.lang=language;document.title=`Rodrigo López Flores | ${t.profession}`;document.querySelector('meta[name=description]').content=t.intro;
  document.querySelectorAll('[data-key]').forEach(node=>{node.textContent=t[node.dataset.key];});
  document.getElementById('navigation').setAttribute('aria-label',t.nav);document.getElementById('filters').setAttribute('aria-label',t.filterLabel);document.getElementById('skill-buttons').setAttribute('aria-label',t.skillLabel);
- const languageButton=document.getElementById('language');const languageLabels={es:'Español',en:'English',pt:'Português'};document.getElementById('language-name').textContent=languageLabels[language];languageButton.setAttribute('aria-label',`${languageLabels[language]}. ${t.next}`);languageButton.title=t.next;
+ const languageButton=document.getElementById('language');
+ const languageLabels={es:'Español',en:'English',pt:'Português'};
+ const editionLabels={es:'Edición',en:'Edition',pt:'Edição'};
+ document.getElementById('language-name').textContent=editionLabels[language];
+ languageButton.style.setProperty('--language-index',languageOrder.indexOf(language));
+ languageButton.querySelectorAll('[data-language]').forEach(node=>node.classList.toggle('is-current',node.dataset.language===language));
+ languageButton.setAttribute('aria-label',`${languageLabels[language]}. ${t.next}`);
+ languageButton.title=`${languageLabels[language]} · ${t.next}`;
  const filters=document.getElementById('filters');filters.replaceChildren();['all','data','operations'].forEach((key,i)=>{const b=el('button',t.filters[i]);b.type='button';b.setAttribute('aria-pressed',String(filter===key));b.addEventListener('click',()=>{filter=key;filters.querySelectorAll('button').forEach((n,j)=>n.setAttribute('aria-pressed',String(i===j)));filterRoles();});filters.append(b);});
  const roles=document.getElementById('roles');
  roles.replaceChildren();
@@ -94,7 +101,13 @@ function render(){
  const studies=document.getElementById('studies');studies.replaceChildren();t.studies.forEach((s,i)=>{const card=el('article',undefined,'study');card.append(el('p',s[0],'eyebrow'),el('h3',s[1]),el('p',institutions[i]),el('small',s[2]));studies.append(card);});
  document.querySelectorAll('.skill-print').forEach(n=>n.remove());t.skillNames.forEach((name,i)=>{const p=el('p',`${name}: ${t.skillText[i]}`,'skill-print');document.getElementById('skills').append(p);});
 }
-document.getElementById('language').addEventListener('click',()=>{language=languageOrder[(languageOrder.indexOf(language)+1)%3];try{localStorage.setItem('cv-language',language);}catch{}render();notify(locales[language].changed);});
+document.getElementById('language').addEventListener('click',event=>{
+ const selected=event.target.closest('[data-language]')?.dataset.language;
+ language=selected&&selected!==language?selected:languageOrder[(languageOrder.indexOf(language)+1)%3];
+ try{localStorage.setItem('cv-language',language);}catch{}
+ render();
+ notify(locales[language].changed);
+});
 document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('rodrilopez2498@gmail.com');notify(locales[language].copied);}catch{notify(locales[language].copyError);}});
 function preparePrint(){if(printState)return;printState=[...document.querySelectorAll('.role')].map(node=>({node,hidden:node.hidden}));printState.forEach(({node})=>{node.hidden=false;});}
 function restorePrint(){if(!printState)return;printState.forEach(({node,hidden})=>{node.hidden=hidden;});printState=undefined;}
