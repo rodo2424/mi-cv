@@ -1,16 +1,16 @@
 :root {
-  --paper: #fbf8ef;
-  --ink: #25231f;
-  --muted: #656056;
-  --accent: #713e32;
-  --line: #cec5b5;
-  --wash: #f1ecdf;
+  --paper: #faf9f2;
+  --ink: #293f34;
+  --muted: #59655c;
+  --accent: #3c614d;
+  --line: #cbd1c3;
+  --wash: #edf0e6;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 115px; }
 body {
   margin: 0;
-  background: #e8e2d5;
+  background: #e7eade;
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.65;
@@ -30,7 +30,7 @@ nav {
   padding: 12px max(20px, calc((100vw - 1100px)/2));
   background: var(--paper);
   border-bottom: 1px solid var(--line);
-  box-shadow: 0 2px 10px #25231f08;
+  box-shadow: 0 2px 10px #293f3408;
 }
 .brand { font: bold 27px Georgia, serif; text-decoration: none; }
 .brand span { color: var(--accent); }
@@ -40,30 +40,31 @@ nav {
 .nav-actions { gap: 14px; }
 .nav-actions button { border: 1px solid var(--line); padding: 9px 12px; border-radius: 3px; font-size: 12px; background: transparent; }
 #language {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 11px;
-  background: var(--accent);
-  color: #fffdf6;
-  border: 1px solid var(--accent);
-  padding: 10px 16px;
-  min-height: 54px;
-  box-shadow: 3px 3px 0 #cbb6a5;
-  transition: background .15s, transform .15s, box-shadow .15s;
+  gap: 7px;
+  background: var(--wash);
+  color: var(--accent);
+  border: 1px solid #93aa97;
+  border-radius: 4px;
+  padding: 6px 11px;
+  min-height: 36px;
+  box-shadow: none;
+  transition: background .15s, border-color .15s;
 }
-#language:hover { background: #542c24; transform: translateY(-1px); box-shadow: 3px 4px 0 #cbb6a5; }
-#language:active { transform: translateY(1px); box-shadow: 1px 1px 0 #cbb6a5; }
-.language-text { display: flex; flex-direction: column; text-align: left; line-height: 1.4; }
-#language-name { font-size: 13px; font-weight: bold; }
-.language-options { font-size: 10px; letter-spacing: 1.5px; margin-top: 2px; }
-.cycle-icon { margin-left: 7px; font-size: 14px; }
+#language svg { width: 16px; height: 16px; }
+#language:hover { background: #e0e8dc; border-color: var(--accent); }
+#language:active { background: #d5dfd0; }
+.language-text { display: inline-flex; align-items: center; gap: 7px; line-height: 1.4; }
+#language-name { font-size: 12px; font-weight: 600; letter-spacing: .2px; }
+.cycle-icon { font-size: 15px; line-height: 1; opacity: .8; }
 main {
   max-width: 1100px;
   margin: 28px auto 50px;
   background: var(--paper);
   padding: 32px 56px 42px;
   border: 1px solid var(--line);
-  box-shadow: 0 14px 45px #25231f12;
+  box-shadow: 0 14px 45px #293f3410;
 }
 .edition {
   display: flex;
@@ -110,7 +111,7 @@ section { margin-top: 42px; scroll-margin-top: 10px; }
 .role-meta>span { display: block; margin: 8px 0; }
 .role-body { padding-left: 24px; border-left: 1px solid var(--line); }
 .role-summary { margin: 0 0 14px; font: 16px/1.65 Georgia, serif; }
-.responsibilities { margin: 0; padding-left: 17px; font-size: 13px; line-height: 1.75; color: #514b43; }
+.responsibilities { margin: 0; padding-left: 17px; font-size: 13px; line-height: 1.75; color: #46564a; }
 .responsibilities li { padding-left: 3px; margin: 0 0 8px; }
 .responsibilities li::marker { color: var(--accent); font-size: 10px; }
 .skill-detail { background: var(--wash); border-top: 2px solid var(--accent); padding: 24px; min-height: 150px; }
@@ -141,7 +142,7 @@ footer a { font-size: 13px; color: var(--accent); }
   nav { flex-wrap: wrap; gap: 12px; padding: 12px 16px; }
   .nav-actions { gap: 10px; }
   .nav-actions button { padding: 8px; font-size: 11px; }
-  #language { padding: 8px 12px; gap: 8px; }
+  #language { padding: 6px 10px; gap: 7px; }
   #language-name { font-size: 12px; }
   .nav-links { order: 3; width: 100%; justify-content: center; gap: 25px; }
   main { margin: 16px 12px 24px; padding: 24px 22px; }
@@ -164,8 +165,8 @@ footer a { font-size: 13px; color: var(--accent); }
 @media (max-width: 360px) {
   nav { padding: 10px; }
   .nav-actions { gap: 7px; }
-  #language { padding: 7px 9px; }
-  #language svg { width: 19px; }
+  #language { padding: 6px 9px; }
+  #language svg { width: 16px; }
   main { padding: 22px 18px; margin-inline: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } #language { transition: none; } }
