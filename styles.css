@@ -3,6 +3,8 @@
   --ink: #292723;
   --muted: #666158;
   --accent: #536c63;
+  --accent-deep: #3d554b;
+  --accent-soft: #edf0e9;
   --line: #d4cfc4;
   --wash: #f1eee5;
 }
@@ -36,7 +38,7 @@ nav {
 .brand span { color: var(--accent); }
 .nav-links, .nav-actions { display: flex; gap: 22px; align-items: center; }
 .nav-links a { font-size: 12px; text-decoration: none; letter-spacing: .4px; }
-.nav-links a:hover { text-decoration: underline; }
+.nav-links a:hover { color: var(--accent-deep); text-decoration: underline; }
 .nav-actions { gap: 14px; }
 .nav-actions button { border: 1px solid var(--line); padding: 9px 12px; border-radius: 3px; font-size: 12px; background: transparent; }
 /* A compact edition seal; the ink marker moves when the edition changes. */
@@ -52,13 +54,13 @@ nav {
   padding: 4px 8px;
   background: transparent;
   color: var(--muted);
-  border: 3px double #aaa99c;
+  border: 3px double var(--accent);
   border-radius: 2px;
   transition: border-color .2s, background .2s;
 }
 #language:hover { border-color: var(--accent); background: var(--wash); }
 #language:active { background: #e9e7de; }
-.seal-caption { font-size: 8px; font-weight: 500; letter-spacing: 2px; line-height: 1.2; text-transform: uppercase; }
+.seal-caption { color: var(--accent-deep); font-size: 8px; font-weight: 500; letter-spacing: 2px; line-height: 1.2; text-transform: uppercase; }
 .edition-track { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); width: 94px; }
 .edition-track::before {
   content: '';
@@ -95,7 +97,7 @@ main {
 .eyebrow { font-size: 10px; letter-spacing: 1.7px; text-transform: uppercase; font-weight: bold; color: var(--muted); margin: 22px 0 12px; }
 .masthead .eyebrow { margin: 0 0 14px; color: var(--muted); letter-spacing: 2px; }
 h1 { font: bold clamp(40px, 6.3vw, 78px)/1.08 Georgia, 'Times New Roman', serif; letter-spacing: -3px; margin: 0; }
-.masthead-caption { margin: 15px 0 0; color: var(--muted); font-size: 10px; letter-spacing: 3px; }
+.masthead-caption { margin: 15px 0 0; color: var(--accent); font-size: 10px; letter-spacing: 3px; }
 h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
 h2 { font-size: 32px; line-height: 1.2; margin: 0 0 18px; }
 h3 { font-size: 25px; line-height: 1.25; margin: 0 0 12px; }
@@ -105,21 +107,25 @@ h3 { font-size: 25px; line-height: 1.25; margin: 0 0 12px; }
 .lead::first-letter { float: left; font: 64px/.9 Georgia, serif; margin: 6px 9px 0 0; color: var(--accent); }
 .personal { color: var(--muted); font: 16px/1.75 Georgia, 'Times New Roman', serif; }
 .contact { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 24px; font-size: 12px; font-weight: bold; color: var(--ink); }
+.contact a { text-decoration-color: var(--accent); }
+.contact a:hover, .contact button:hover { color: var(--accent-deep); }
 .contact button { border: 0; border-bottom: 1px solid var(--accent); padding: 0; background: transparent; }
 .intro-grid aside { border-left: 1px solid var(--line); padding: 0 0 0 26px; font: 15px/1.7 Georgia, serif; }
-.intro-grid aside .eyebrow { margin-top: 0; font-family: Arial, sans-serif; }
+.intro-grid aside .eyebrow { color: var(--accent-deep); margin-top: 0; font-family: Arial, sans-serif; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
 section { margin-top: 42px; scroll-margin-top: 10px; }
-.section-heading { display: flex; align-items: baseline; gap: 16px; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 10px 0; }
+.section-heading { display: flex; align-items: baseline; gap: 16px; border-top: 3px solid var(--accent); border-bottom: 1px solid var(--ink); padding: 10px 0; }
 .section-heading span { color: var(--accent); font-size: 11px; font-weight: bold; letter-spacing: 1px; }
-.section-heading h2 { margin: 0; font-size: 30px; }
+.section-heading h2 { color: var(--accent-deep); margin: 0; font-size: 30px; }
 .section-intro { color: var(--muted); font: italic 15px/1.6 Georgia, serif; margin: 14px 0; }
 .filters, .skill-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
 .filters button, .skill-buttons button { background: transparent; border: 1px solid var(--line); border-radius: 2px; padding: 8px 14px; font-size: 12px; min-height: 38px; }
 .filters button:hover, .skill-buttons button:hover { border-color: var(--accent); }
-.filters button[aria-pressed=true], .skill-buttons button[aria-pressed=true] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.filters button[aria-pressed=true], .skill-buttons button[aria-pressed=true] { color: var(--paper); background: var(--accent); border-color: var(--accent); }
 .role { display: grid; grid-template-columns: 175px 1fr; gap: 26px; border-bottom: 1px solid var(--line); padding: 26px 0; }
 .role:last-child { border-bottom: 0; }
+.role:first-child .role-body { border-left-color: var(--accent); }
+.role:first-child h3, .role:first-child .role-meta strong { color: var(--accent-deep); }
 .role-meta { font-size: 11px; color: var(--muted); padding-top: 4px; }
 .role-meta strong { display: block; color: var(--ink); font-size: 13px; }
 .role-meta>span { display: block; margin: 8px 0; }
@@ -128,19 +134,19 @@ section { margin-top: 42px; scroll-margin-top: 10px; }
 .responsibilities { margin: 0; padding-left: 17px; font-size: 13px; line-height: 1.75; color: #514d45; }
 .responsibilities li { padding-left: 3px; margin: 0 0 8px; }
 .responsibilities li::marker { color: var(--muted); font-size: 10px; }
-.skill-detail { background: var(--wash); border-top: 2px solid var(--accent); padding: 24px; min-height: 150px; }
-.skill-detail h3 { font-size: 24px; }
+.skill-detail { background: var(--accent-soft); border-top: 2px solid var(--accent); padding: 24px; min-height: 150px; }
+.skill-detail h3 { color: var(--accent-deep); font-size: 24px; }
 .skill-detail p { margin: 0; color: var(--muted); font: 16px/1.7 Georgia, serif; }
 .studies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 24px; }
 .study { border-left: 1px solid var(--line); padding-left: 20px; }
 .study:first-child { border-left: 0; padding-left: 0; }
 .study h3 { font-size: 21px; }
 .study p { font: 14px/1.65 Georgia, serif; color: var(--muted); }
-.study .eyebrow { margin-top: 0; font: bold 10px/1.5 Arial, sans-serif; color: var(--muted); }
+.study .eyebrow { margin-top: 0; font: bold 10px/1.5 Arial, sans-serif; color: var(--accent-deep); }
 .study small { color: var(--muted); font-size: 12px; }
 footer { border-top: 5px double var(--ink); margin-top: 42px; padding-top: 22px; text-align: center; }
 footer>p:first-child { font: italic 26px Georgia, serif; }
-footer a { font-size: 13px; color: var(--ink); }
+footer a { font-size: 13px; color: var(--accent-deep); }
 .copyright { color: var(--muted); font-size: 10px; letter-spacing: .5px; margin-top: 26px; }
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); max-width: 90%; background: var(--ink); color: white; border-radius: 3px; padding: 10px 18px; font-size: 14px; z-index: 20; }
 .toast:empty { display: none; }
