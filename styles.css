@@ -278,3 +278,26 @@ footer a { font-size: 13px; color: var(--accent-deep); }
   .next-chapter>p:last-child { font-size: 10pt; }
 
 }
+/* Concrete contributions and projects accompany the career narrative. */
+.contact .application-link{border:1px solid var(--accent);padding:5px 10px;text-decoration:none;background:var(--accent-soft)}
+.contribution-box{margin-top:30px;padding:20px 0;border-bottom:1px solid var(--line)}
+.contribution-box>h2{font-size:25px;color:var(--accent-deep);margin-bottom:7px}
+.contributions{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.contribution{border-left:1px solid var(--line);padding-left:18px}
+.contribution:first-child{border-left:0;padding-left:0}
+.contribution-number{font-size:10px;letter-spacing:1px;color:var(--accent)}
+.contribution h3{font-size:20px;margin:8px 0}
+.contribution p{font:14px/1.7 Georgia,serif;color:var(--muted);margin:0}
+.project-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px}
+.project-card{border-left:2px solid var(--accent);padding-left:20px}
+.project-card .eyebrow{font-size:9px;margin-top:0;color:var(--accent-deep)}
+.project-card h3{font-size:23px}
+.project-card>p:not(.eyebrow){font:16px/1.7 Georgia,serif;color:var(--muted)}
+.project-card small{font-size:10px;color:var(--accent)}
+.certifications{border-top:1px solid var(--line);margin-top:26px;padding-top:20px}
+.certifications h3{font-size:23px;color:var(--accent-deep)}
+.certifications ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0}
+.certifications li{border-left:1px solid var(--line);padding-left:15px;font-size:13px}
+.certifications span{display:block;font-size:11px;color:var(--muted);margin-top:6px}
+@media(max-width:760px){.contributions,.project-cards,.certifications ul{grid-template-columns:1fr}.contribution,.contribution:first-child{border-left:1px solid var(--line);padding-left:15px}}
+@media print{.contribution-box{display:none}.project-cards{grid-template-columns:1fr 1fr}.project-card{break-inside:avoid}.project-card h3{font-size:14pt}.project-card>p:not(.eyebrow){font-size:9pt}.certifications{break-inside:avoid}.certifications h3{font-size:14pt}.certifications ul{grid-template-columns:repeat(3,1fr)}.certifications li{font-size:9pt}.certifications span{font-size:8pt}}
