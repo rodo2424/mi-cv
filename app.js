@@ -65,7 +65,6 @@ const languageOrder=['es','en','pt'];
 let language='es';
 try { const saved=localStorage.getItem('cv-language'); if(languageOrder.includes(saved)) language=saved; } catch {}
 let filter='all', skill=0, toastTimer, printState;
-const openRoles=new Set([0]);
 function el(tag,text,className){const node=document.createElement(tag); if(text!==undefined) node.textContent=text; if(className) node.className=className; return node;}
 function notify(message){clearTimeout(toastTimer);document.getElementById('status').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('status').textContent='';},3500);}
 function filterRoles(){let count=0;document.querySelectorAll('.role').forEach((node,i)=>{node.hidden=filter!=='all'&&!categories[i].includes(filter);if(!node.hidden)count++;});document.getElementById('result-count').textContent=`${count} ${locales[language].count}`;}
@@ -74,16 +73,30 @@ function render(){
  const t=locales[language];document.documentElement.lang=language;document.title=`Rodrigo López Flores | ${t.profession}`;document.querySelector('meta[name=description]').content=t.intro;
  document.querySelectorAll('[data-key]').forEach(node=>{node.textContent=t[node.dataset.key];});
  document.getElementById('navigation').setAttribute('aria-label',t.nav);document.getElementById('filters').setAttribute('aria-label',t.filterLabel);document.getElementById('skill-buttons').setAttribute('aria-label',t.skillLabel);
- const languageButton=document.getElementById('language');languageButton.textContent=`${language.toUpperCase()} → ${languageOrder[(languageOrder.indexOf(language)+1)%3].toUpperCase()}`;languageButton.setAttribute('aria-label',t.next);languageButton.title=t.next;
+ const languageButton=document.getElementById('language');const languageLabels={es:'Idioma: Español',en:'Language: English',pt:'Idioma: Português'};document.getElementById('language-name').textContent=languageLabels[language];languageButton.setAttribute('aria-label',`${languageLabels[language]}. ${t.next}`);languageButton.title=t.next;
  const filters=document.getElementById('filters');filters.replaceChildren();['all','data','operations'].forEach((key,i)=>{const b=el('button',t.filters[i]);b.type='button';b.setAttribute('aria-pressed',String(filter===key));b.addEventListener('click',()=>{filter=key;filters.querySelectorAll('button').forEach((n,j)=>n.setAttribute('aria-pressed',String(i===j)));filterRoles();});filters.append(b);});
- const roles=document.getElementById('roles');roles.replaceChildren();t.roles.forEach((r,i)=>{const article=el('article',undefined,'role');const meta=el('div',undefined,'role-meta');meta.append(el('strong',companies[i]),el('span',t.dates[i]),el('div',i===0?'Santa Cruz, Bolivia':i===5?t.usa:'La Paz, Bolivia'));const body=el('div');body.append(el('h3',r[0]),el('p',r[1],'role-summary'));const details=el('details');details.open=openRoles.has(i);const summary=el('summary',t.detail);summary.setAttribute('aria-label',`${t.detail}: ${r[0]}`);const list=el('ul');r[2].forEach(text=>list.append(el('li',text)));details.append(summary,list);details.addEventListener('toggle',()=>{if(printState)return;if(details.open)openRoles.add(i);else openRoles.delete(i);});body.append(details);article.append(meta,body);roles.append(article);});filterRoles();
+ const roles=document.getElementById('roles');
+ roles.replaceChildren();
+ t.roles.forEach((r,i)=>{
+  const article=el('article',undefined,'role');
+  const meta=el('div',undefined,'role-meta');
+  meta.append(el('strong',companies[i]),el('span',t.dates[i]),el('div',i===0?'Santa Cruz, Bolivia':i===5?t.usa:'La Paz, Bolivia'));
+  const body=el('div',undefined,'role-body');
+  body.append(el('h3',r[0]),el('p',r[1],'role-summary'));
+  const list=el('ul',undefined,'responsibilities');
+  r[2].forEach(text=>list.append(el('li',text)));
+  body.append(list);
+  article.append(meta,body);
+  roles.append(article);
+ });
+ filterRoles();
  const buttons=document.getElementById('skill-buttons');buttons.replaceChildren();t.skillNames.forEach((name,i)=>{const b=el('button',name);b.type='button';b.addEventListener('click',()=>{skill=i;renderSkill();});buttons.append(b);});renderSkill();
  const studies=document.getElementById('studies');studies.replaceChildren();t.studies.forEach((s,i)=>{const card=el('article',undefined,'study');card.append(el('p',s[0],'eyebrow'),el('h3',s[1]),el('p',institutions[i]),el('small',s[2]));studies.append(card);});
  document.querySelectorAll('.skill-print').forEach(n=>n.remove());t.skillNames.forEach((name,i)=>{const p=el('p',`${name}: ${t.skillText[i]}`,'skill-print');document.getElementById('skills').append(p);});
 }
 document.getElementById('language').addEventListener('click',()=>{language=languageOrder[(languageOrder.indexOf(language)+1)%3];try{localStorage.setItem('cv-language',language);}catch{}render();notify(locales[language].changed);});
 document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('rodrilopez2498@gmail.com');notify(locales[language].copied);}catch{notify(locales[language].copyError);}});
-function preparePrint(){if(printState)return;printState=[...document.querySelectorAll('.role')].map(node=>({node,hidden:node.hidden,open:node.querySelector('details').open}));printState.forEach(({node})=>{node.hidden=false;node.querySelector('details').open=true;});}
-function restorePrint(){if(!printState)return;printState.forEach(({node,hidden,open})=>{node.hidden=hidden;node.querySelector('details').open=open;});setTimeout(()=>{printState=undefined;},0);}
+function preparePrint(){if(printState)return;printState=[...document.querySelectorAll('.role')].map(node=>({node,hidden:node.hidden}));printState.forEach(({node})=>{node.hidden=false;});}
+function restorePrint(){if(!printState)return;printState.forEach(({node,hidden})=>{node.hidden=hidden;});printState=undefined;}
 window.addEventListener('beforeprint',preparePrint);window.addEventListener('afterprint',restorePrint);document.getElementById('print').addEventListener('click',()=>{preparePrint();window.print();});
 render();
