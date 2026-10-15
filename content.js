@@ -8,7 +8,7 @@ const locales={
     "field": "INGENIERÍA + DATOS",
     "profession": "Ingeniero industrial · Distribución, planificación y analítica",
     "headline": "De la operación diaria a una visión nacional.",
-    "intro": "Ingeniero industrial con experiencia en distribución, gestión de flotas y planificación de rutas en Embol. Actualmente trabajo en el análisis nacional de distribución: estandarizo datos logísticos y desarrollo tableros en Power BI para el seguimiento gerencial. He participado en el dimensionamiento de flota rural y el balanceo de rutas y cargas en La Paz y El Alto. Estoy culminando la maestría en Ciencia de Datos e Inteligencia Artificial, con investigación aplicada en ruterización dinámica de última milla.",
+    "intro": "Ingeniero industrial con experiencia en distribución, gestión de flotas y planificación de rutas en Embol. Actualmente trabajo en el análisis nacional de distribución: estandarizo datos logísticos y desarrollo tableros en Power BI para el seguimiento gerencial. He participado en el dimensionamiento de flota rural y el balanceo de rutas y cargas en La Paz y El Alto. Me encuentro en proceso de titulación de la Maestría en Ciencia de Datos e Inteligencia Artificial de la UAGRM, con una tesis aplicada vinculada a NUTRIMENTOS MAYBO SRL en desarrollo.",
     "personal": "Conozco la operación desde el terreno: vehículos, rutas, seguridad y entregas. Esa experiencia me ayuda a plantear preguntas útiles cuando trabajo con los datos. Me interesa aportar en distribución y planificación, combinando el análisis con las necesidades reales de los equipos.",
     "email": "Escríbeme",
     "copy": "Copiar correo",
@@ -126,7 +126,7 @@ const locales={
       "Desarrollo tableros gerenciales y reportes automáticos para seguir indicadores logísticos. Trabajo con Power BI, DAX avanzado y Power Query para convertir la información de la operación en seguimiento útil para el equipo.",
       "Planificación de rutas con Route to Market (RTM), balanceo de cargas y dimensionamiento de la flota rural. Participé en el balanceo de rutas entre los centros de distribución de La Paz y El Alto.",
       "Programación de viajes, mantenimiento preventivo y seguimiento de despachos, retornos y liquidaciones diarias. Mi experiencia combina disponibilidad de vehículos, seguridad y organización de la distribución.",
-      "Python y SQL forman parte de mis herramientas de análisis. Profundizo en machine learning a través de la maestría y la investigación aplicada en ruterización dinámica de última milla.",
+      "Python y SQL forman parte de mis herramientas de análisis. Profundizo en machine learning mediante la formación de maestría y los trabajos académicos en desarrollo.",
       "SAP y Roadnet forman parte de mi entorno de herramientas para trabajar con información operativa y planificación logística.",
       "Excel avanzado para organizar y analizar información operativa, como complemento de los reportes y tableros de gestión.",
       "Formación en mejora continua y análisis de procesos, complementada con un diplomado en Lean Six Sigma."
@@ -177,11 +177,11 @@ const locales={
         "Hoy mi trabajo abarca la distribución a nivel nacional. Estandarizo información logística, desarrollo tableros y doy seguimiento a indicadores, manteniendo la conexión con los equipos y los desafíos de la operación diaria."
       ]
     ],
-    "educationIntro": "Mi formación reúne Ingeniería Industrial (2017–2022), un diplomado en Lean Six Sigma y la maestría en Ciencia de Datos e Inteligencia Artificial que estoy culminando.",
+    "educationIntro": "Mi formación reúne Ingeniería Industrial (2017–2022), un diplomado en Lean Six Sigma y la Maestría en Ciencia de Datos e Inteligencia Artificial de la UAGRM, actualmente en proceso de titulación.",
     "nextLabel": "La siguiente etapa",
     "nextTitle": "Seguir aprendiendo, cerca de la operación.",
     "nextText": "Busco aportar en distribución y planificación con enfoque en datos: organizar capacidad y rutas, dar seguimiento a la operación y apoyar decisiones con indicadores claros. Quiero seguir desarrollando esa conexión entre logística y analítica.",
-    "profileSummary": "Ingeniero industrial con experiencia en distribución, gestión de flotas y planificación de rutas en Embol. Actualmente trabajo en el análisis nacional de distribución: estandarizo datos logísticos y desarrollo tableros en Power BI para el seguimiento gerencial. He participado en el dimensionamiento de flota rural y el balanceo de rutas y cargas en La Paz y El Alto. Estoy culminando la maestría en Ciencia de Datos e Inteligencia Artificial, con investigación aplicada en ruterización dinámica de última milla.",
+    "profileSummary": "Ingeniero industrial con experiencia en distribución, gestión de flotas y planificación de rutas en Embol. Actualmente trabajo en el análisis nacional de distribución: estandarizo datos logísticos y desarrollo tableros en Power BI para el seguimiento gerencial. He participado en el dimensionamiento de flota rural y el balanceo de rutas y cargas en La Paz y El Alto. Me encuentro en proceso de titulación de la Maestría en Ciencia de Datos e Inteligencia Artificial de la UAGRM, con una tesis aplicada vinculada a NUTRIMENTOS MAYBO SRL en desarrollo.",
     "application": "CV para postular",
     "applicationKit": "Carta y correo de postulación",
     "downloadPdf": "Descargar PDF · 2 páginas",
@@ -194,7 +194,7 @@ const locales={
     "technicalSkills": "Otras herramientas y formación",
     "languageTitle": "Idiomas",
     "appliedText": "Planificación de rutas (RTM) · balanceo de cargas · dimensionamiento de flotas · distribución rural · mantenimiento preventivo · Power BI · DAX avanzado · Power Query · KPIs · estandarización de datos.",
-    "technicalText": "Excel avanzado · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning y ruterización dinámica en el ámbito de la maestría y la investigación aplicada.",
+    "technicalText": "Excel avanzado · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning en el ámbito de la formación de maestría y proyectos académicos en desarrollo.",
     "valueTitle": "Tres aportes de mi trayectoria",
     "valueIntro": "Mi experiencia conecta información, planificación y trabajo en la operación.",
     "contributions": [
@@ -222,9 +222,9 @@ const locales={
       ],
       [
         "UAGRM · Investigación de maestría en desarrollo",
-        "Ruterización dinámica de última milla",
-        "Mi investigación aplicada se enfoca en automatizar la ruterización dinámica y conectar modelos analíticos con necesidades reales de la distribución.",
-        "Python · machine learning · última milla"
+        "Tesis aplicada vinculada a NUTRIMENTOS MAYBO SRL",
+        "Tesis de maestría en desarrollo, vinculada a NUTRIMENTOS MAYBO SRL. El tema específico, la metodología y los resultados se publicarán una vez confirmados.",
+        "Investigación aplicada · ciencia de datos"
       ]
     ],
     "certificationsTitle": "Cursos y certificaciones seleccionados",
@@ -252,7 +252,7 @@ const locales={
     "field": "ENGINEERING + DATA",
     "profession": "Industrial engineer · Distribution, planning & analytics",
     "headline": "From daily operations to a national perspective.",
-    "intro": "Industrial engineer with experience in distribution, fleet management and route planning at Embol. I currently work on nationwide distribution analysis, standardising logistics data and developing Power BI dashboards for management reporting. I have contributed to rural fleet sizing and route and load balancing in La Paz and El Alto. I am completing a master’s degree in Data Science and Artificial Intelligence, with applied research into dynamic last-mile routing.",
+    "intro": "Industrial engineer with experience in distribution, fleet management and route planning at Embol. I currently work on nationwide distribution analysis, standardising logistics data and developing Power BI dashboards for management reporting. I have contributed to rural fleet sizing and route and load balancing in La Paz and El Alto. I am in the degree-completion stage of the UAGRM master’s programme in Data Science and Artificial Intelligence, with an applied thesis linked to NUTRIMENTOS MAYBO SRL in development.",
     "personal": "I know operations from the ground: vehicles, routes, safety and deliveries. That experience helps me ask useful questions when working with data. I want to contribute to distribution and planning, connecting analysis with the practical needs of teams.",
     "email": "Get in touch",
     "copy": "Copy email",
@@ -370,7 +370,7 @@ const locales={
       "I develop management dashboards and automated reports to track logistics indicators. I work with Power BI, advanced DAX and Power Query to turn operational information into useful tracking for the team.",
       "Route planning with Route to Market (RTM), load balancing and rural fleet sizing. I contributed to route balancing between the distribution centres in La Paz and El Alto.",
       "Trip scheduling, preventive maintenance and tracking of dispatches, returns and daily settlements. My experience combines vehicle availability, safety and distribution planning.",
-      "Python and SQL are part of my analysis toolkit. I am developing my machine learning knowledge through my master’s studies and applied research into dynamic last-mile routing.",
+      "Python and SQL are part of my analysis toolkit. I am developing my machine learning knowledge through master’s coursework and academic projects in progress.",
       "SAP and Roadnet are part of my toolkit for working with operational information and logistics planning.",
       "Advanced Excel for organising and analysing operational information, alongside management reports and dashboards.",
       "Training in continuous improvement and process analysis, complemented by a diploma in Lean Six Sigma."
@@ -421,11 +421,11 @@ const locales={
         "Today, my work covers nationwide distribution. I standardise logistics information, develop dashboards and monitor indicators, staying connected to the teams and the challenges of daily operations."
       ]
     ],
-    "educationIntro": "My education combines Industrial Engineering (2017–2022), a diploma in Lean Six Sigma and the master’s degree in Data Science and Artificial Intelligence I am completing.",
+    "educationIntro": "My education combines Industrial Engineering (2017–2022), a diploma in Lean Six Sigma and the UAGRM master’s programme in Data Science and Artificial Intelligence, currently in the degree-completion stage.",
     "nextLabel": "The next chapter",
     "nextTitle": "Keep learning, stay close to operations.",
     "nextText": "I want to contribute to distribution and planning with a data focus: organising capacity and routes, monitoring operations and supporting decisions with clear indicators. I want to keep developing the connection between logistics and analytics.",
-    "profileSummary": "Industrial engineer with experience in distribution, fleet management and route planning at Embol. I currently work on nationwide distribution analysis, standardising logistics data and developing Power BI dashboards for management reporting. I have contributed to rural fleet sizing and route and load balancing in La Paz and El Alto. I am completing a master’s degree in Data Science and Artificial Intelligence, with applied research into dynamic last-mile routing.",
+    "profileSummary": "Industrial engineer with experience in distribution, fleet management and route planning at Embol. I currently work on nationwide distribution analysis, standardising logistics data and developing Power BI dashboards for management reporting. I have contributed to rural fleet sizing and route and load balancing in La Paz and El Alto. I am in the degree-completion stage of the UAGRM master’s programme in Data Science and Artificial Intelligence, with an applied thesis linked to NUTRIMENTOS MAYBO SRL in development.",
     "application": "Application CV",
     "applicationKit": "Cover letter and application email",
     "downloadPdf": "Download PDF · 2 pages",
@@ -438,7 +438,7 @@ const locales={
     "technicalSkills": "Other tools and training",
     "languageTitle": "Languages",
     "appliedText": "Route planning (RTM) · load balancing · fleet sizing · rural distribution · preventive maintenance · Power BI · advanced DAX · Power Query · KPIs · data standardisation.",
-    "technicalText": "Advanced Excel · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning and dynamic routing through master’s studies and applied research.",
+    "technicalText": "Advanced Excel · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning through master’s studies and academic projects in progress.",
     "valueTitle": "Three contributions from my experience",
     "valueIntro": "My work connects information, planning and day-to-day operations.",
     "contributions": [
@@ -466,9 +466,9 @@ const locales={
       ],
       [
         "UAGRM · Master’s research in progress",
-        "Dynamic last-mile routing",
-        "My applied research focuses on automating dynamic routing and connecting analytical models with practical distribution needs.",
-        "Python · machine learning · last mile"
+        "Applied master’s thesis linked to NUTRIMENTOS MAYBO SRL",
+        "Master’s thesis in development, linked to NUTRIMENTOS MAYBO SRL. The specific topic, methodology and results will be published once verified.",
+        "Applied research · data science"
       ]
     ],
     "certificationsTitle": "Selected courses and certificates",
@@ -496,7 +496,7 @@ const locales={
     "field": "ENGENHARIA + DADOS",
     "profession": "Engenheiro industrial · Distribuição, planejamento e análise",
     "headline": "Da operação diária a uma visão nacional.",
-    "intro": "Engenheiro industrial com experiência em distribuição, gestão de frotas e planejamento de rotas na Embol. Atualmente trabalho na análise nacional de distribuição: padronizo dados logísticos e desenvolvo painéis em Power BI para acompanhamento gerencial. Participei do dimensionamento da frota rural e do balanceamento de rotas e cargas em La Paz e El Alto. Estou concluindo o mestrado em Ciência de Dados e Inteligência Artificial, com pesquisa aplicada em roteirização dinâmica de última milha.",
+    "intro": "Engenheiro industrial com experiência em distribuição, gestão de frotas e planejamento de rotas na Embol. Atualmente trabalho na análise nacional de distribuição: padronizo dados logísticos e desenvolvo painéis em Power BI para acompanhamento gerencial. Participei do dimensionamento da frota rural e do balanceamento de rotas e cargas em La Paz e El Alto. Estou na etapa de titulação do mestrado em Ciência de Dados e Inteligência Artificial da UAGRM, com uma dissertação aplicada vinculada à NUTRIMENTOS MAYBO SRL em desenvolvimento.",
     "personal": "Conheço a operação no dia a dia: veículos, rotas, segurança e entregas. Essa experiência me ajuda a formular perguntas úteis ao trabalhar com dados. Quero contribuir na distribuição e no planejamento, conectando a análise às necessidades reais das equipes.",
     "email": "Entre em contato",
     "copy": "Copiar e-mail",
@@ -614,7 +614,7 @@ const locales={
       "Desenvolvo painéis gerenciais e relatórios automáticos para acompanhar indicadores logísticos. Trabalho com Power BI, DAX avançado e Power Query para transformar informações da operação em acompanhamento útil para a equipe.",
       "Planejamento de rotas com Route to Market (RTM), balanceamento de cargas e dimensionamento da frota rural. Participei do balanceamento de rotas entre os centros de distribuição de La Paz e El Alto.",
       "Programação de viagens, manutenção preventiva e acompanhamento de saídas, retornos e acertos diários. Minha experiência combina disponibilidade de veículos, segurança e organização da distribuição.",
-      "Python e SQL fazem parte das minhas ferramentas de análise. Aprofundo meus conhecimentos em machine learning no mestrado e na pesquisa aplicada em roteirização dinâmica de última milha.",
+      "Python e SQL fazem parte das minhas ferramentas de análise. Aprofundo meus conhecimentos em machine learning por meio do mestrado e de projetos acadêmicos em desenvolvimento.",
       "SAP e Roadnet fazem parte do meu conjunto de ferramentas para trabalhar com informações operacionais e planejamento logístico.",
       "Excel avançado para organizar e analisar informações operacionais, como complemento dos relatórios e painéis de gestão.",
       "Formação em melhoria contínua e análise de processos, complementada por um diplomado em Lean Six Sigma."
@@ -665,11 +665,11 @@ const locales={
         "Hoje meu trabalho abrange a distribuição em âmbito nacional. Padronizo informações logísticas, desenvolvo painéis e acompanho indicadores, mantendo a conexão com as equipes e os desafios da operação diária."
       ]
     ],
-    "educationIntro": "Minha formação reúne Engenharia Industrial (2017–2022), um diplomado em Lean Six Sigma e o mestrado em Ciência de Dados e Inteligência Artificial que estou concluindo.",
+    "educationIntro": "Minha formação reúne Engenharia Industrial (2017–2022), um diplomado em Lean Six Sigma e o mestrado em Ciência de Dados e Inteligência Artificial da UAGRM, atualmente em etapa de titulação.",
     "nextLabel": "A próxima etapa",
     "nextTitle": "Continuar aprendendo, perto da operação.",
     "nextText": "Quero contribuir na distribuição e no planejamento com foco em dados: organizar capacidade e rotas, acompanhar a operação e apoiar decisões com indicadores claros. Quero continuar desenvolvendo essa conexão entre logística e análise.",
-    "profileSummary": "Engenheiro industrial com experiência em distribuição, gestão de frotas e planejamento de rotas na Embol. Atualmente trabalho na análise nacional de distribuição: padronizo dados logísticos e desenvolvo painéis em Power BI para acompanhamento gerencial. Participei do dimensionamento da frota rural e do balanceamento de rotas e cargas em La Paz e El Alto. Estou concluindo o mestrado em Ciência de Dados e Inteligência Artificial, com pesquisa aplicada em roteirização dinâmica de última milha.",
+    "profileSummary": "Engenheiro industrial com experiência em distribuição, gestão de frotas e planejamento de rotas na Embol. Atualmente trabalho na análise nacional de distribuição: padronizo dados logísticos e desenvolvo painéis em Power BI para acompanhamento gerencial. Participei do dimensionamento da frota rural e do balanceamento de rotas e cargas em La Paz e El Alto. Estou na etapa de titulação do mestrado em Ciência de Dados e Inteligência Artificial da UAGRM, com uma dissertação aplicada vinculada à NUTRIMENTOS MAYBO SRL em desenvolvimento.",
     "application": "CV para candidaturas",
     "applicationKit": "Carta e e-mail de candidatura",
     "downloadPdf": "Baixar PDF · 2 páginas",
@@ -682,7 +682,7 @@ const locales={
     "technicalSkills": "Outras ferramentas e formação",
     "languageTitle": "Idiomas",
     "appliedText": "Planejamento de rotas (RTM) · balanceamento de cargas · dimensionamento de frotas · distribuição rural · manutenção preventiva · Power BI · DAX avançado · Power Query · KPIs · padronização de dados.",
-    "technicalText": "Excel avançado · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning e roteirização dinâmica no âmbito do mestrado e da pesquisa aplicada.",
+    "technicalText": "Excel avançado · SQL · Python · SAP · Roadnet · Lean Six Sigma. Machine learning no âmbito do mestrado e de projetos acadêmicos em desenvolvimento.",
     "valueTitle": "Três contribuições da minha trajetória",
     "valueIntro": "Minha experiência conecta informação, planejamento e trabalho na operação.",
     "contributions": [
@@ -710,9 +710,9 @@ const locales={
       ],
       [
         "UAGRM · Pesquisa de mestrado em desenvolvimento",
-        "Roteirização dinâmica de última milha",
-        "Minha pesquisa aplicada se concentra em automatizar a roteirização dinâmica e conectar modelos analíticos às necessidades reais da distribuição.",
-        "Python · machine learning · última milha"
+        "Dissertação aplicada vinculada à NUTRIMENTOS MAYBO SRL",
+        "Dissertação de mestrado em desenvolvimento, vinculada à NUTRIMENTOS MAYBO SRL. O tema específico, a metodologia e os resultados serão publicados após confirmação.",
+        "Pesquisa aplicada · ciência de dados"
       ]
     ],
     "certificationsTitle": "Cursos e certificados selecionados",
