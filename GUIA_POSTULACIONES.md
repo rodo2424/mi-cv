@@ -22,7 +22,7 @@ Para coordinación, compara los requisitos de personal, presupuesto y resultados
 >
 > Trabajo con información logística, tableros Power BI y seguimiento de indicadores. En junio y julio de 2025 participé en el balanceo de rutas de La Paz y El Alto, con trabajo sobre cargas de centros de distribución y redefinición de territorios. Me interesa que el análisis ayude a organizar rutas, recursos y entregas.
 >
-> Estoy culminando la maestría en Data Science e Inteligencia Artificial en la UAGRM. Mi investigación aplicada aborda ruteo dinámico y última milla. Busco aportar en distribución y planificación, combinando conocimiento de la operación con herramientas de datos.
+> Estoy en proceso de titulación de la Maestría en Ciencia de Datos e Inteligencia Artificial de la UAGRM. Tengo pendientes dos monografías para diplomas intermedios y desarrollo una tesis vinculada a NUTRIMENTOS MAYBO SRL, cuyo tema específico aún está por definir. Busco aportar en distribución y planificación, combinando conocimiento de la operación con herramientas de datos.
 
 ## Herramientas y formación
 
