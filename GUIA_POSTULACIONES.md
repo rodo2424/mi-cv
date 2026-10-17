@@ -1,6 +1,6 @@
 # Guía para preparar mejores postulaciones
 
-Para **Rodrigo Alejandro López Flores**, con foco en **distribución y planificación con enfoque en datos**. Usa tu CV y el texto de LinkedIn compartido; el acceso directo sigue bloqueado. Los textos son borradores. No se consultó a un asesor humano.
+Para **Rodrigo Alejandro López Flores**, con foco en **distribución y planificación con enfoque en datos**. Usa tu CV, el texto de LinkedIn compartido y el PDF actualizado del perfil; el acceso directo sigue bloqueado. Los textos son borradores. No se consultó a un asesor humano.
 
 ## Puestos que conviene priorizar
 
@@ -22,20 +22,22 @@ Para coordinación, compara los requisitos de personal, presupuesto y resultados
 >
 > Trabajo con información logística, tableros Power BI y seguimiento de indicadores. En junio y julio de 2025 participé en el balanceo de rutas de La Paz y El Alto, con trabajo sobre cargas de centros de distribución y redefinición de territorios. Me interesa que el análisis ayude a organizar rutas, recursos y entregas.
 >
-> Estoy culminando la maestría en Data Science e Inteligencia Artificial en la UAGRM. Mi investigación aplicada aborda ruteo dinámico y última milla. Busco aportar en distribución y planificación, combinando conocimiento de la operación con herramientas de datos.
+> Curso una maestría en Data Science e Inteligencia Artificial en la UAGRM. Mi investigación aplicada aborda ruteo dinámico y última milla. Busco aportar en distribución y planificación, combinando conocimiento de la operación con herramientas de datos.
 
 ## Herramientas y formación
 
-Incluye Power BI, DAX avanzado, Power Query, Excel avanzado, Python, SQL, SAP y Roadnet; prepara ejemplos que expliquen tu uso de cada herramienta. Separa experiencia laboral, cursos e investigación: la maestría no demuestra despliegues de IA ni resultados predictivos en producción.
+Incluye Power BI, DAX, Power Query, Excel avanzado, Python, SQL, SAP y Roadnet; prepara ejemplos que expliquen tu uso de cada herramienta. Separa experiencia laboral, cursos e investigación: la maestría no demuestra despliegues de IA ni resultados predictivos en producción.
 
-Formación confirmada: Ingeniería Industrial (2017–2022); certificados de LinkedIn Learning **Estadística para análisis de datos** y **Fundamentos de big data** (agosto de 2023); curso Udemy **Supply Chain: Administrando la Cadena de Suministro**, completado, sin fecha confirmada. No reconstruyas los ocho registros mencionados si faltan nombres o certificados.
+Formación confirmada: Ingeniería Industrial (2017–2022); certificados de LinkedIn Learning **Estadística para análisis de datos** y **Fundamentos de big data** (agosto de 2023); curso Udemy **Supply Chain: Administrando la Cadena de Suministro**, completado, sin fecha confirmada. El PDF actualizado también muestra Excel Avanzado para la Toma de Decisiones, Project 2019 y Project Online Professional esencial, Desarrolla tus habilidades en gestión de proyectos y Aspectos básicos de la asistencia técnica. Sus fechas y emisores no aparecen; no los completes por suposición. También incluye Excel Skills for Business en Macquarie University, sin fechas ni estado de finalización.
 
-## Alinear el perfil
+## Coherencia entre el perfil y el CV
 
-- Corrige LinkedIn: Asistente de Distribución finaliza en **febrero de 2026**, según tu aclaración; el perfil todavía indica abril.
-- El proyecto del Hogar San Ramón figura en 2020 y la práctica en 2021. Confirma si son actividades distintas antes de vincular sus fechas.
-- Idiomas: español, portugués avanzado e inglés **básico profesional**. Revisa el anterior «intermedio».
-- Distingue Santa Cruz, ubicación del puesto actual, de La Paz, donde figuran experiencias anteriores y la cabecera de LinkedIn. Confirma la ubicación de contacto que deseas mostrar.
+- El PDF actualizado sitúa el inicio de Analista Nacional de Distribución en **febrero de 2026**. Esa fecha sustituye a marzo en el CV y en la línea de tiempo.
+- Asistente de Distribución finaliza en **febrero de 2026**, coincidiendo con tu corrección anterior y con el PDF actualizado. Las dos etapas comparten mes de transición; no se inventa un día de cambio.
+- Idiomas según el PDF actualizado: español y portugués con competencia nativa o bilingüe; inglés con competencia profesional. Estos niveles sustituyen los anteriores; no equivalen automáticamente a una certificación de idioma.
+- Residencia: **La Paz, Bolivia**. Disponibilidad para reubicación o trabajo remoto. Santa Cruz sigue siendo la ubicación del puesto nacional, no la residencia.
+- La maestría se presenta en curso. Los proyectos y estudios ya confirmados se conservan aunque no todos figuren en el extracto del nuevo PDF.
+- El proyecto San Ramón aparecía con fecha de 2020 en el texto anterior, mientras que la práctica está fechada en 2021. Se conserva la responsabilidad general de bioseguridad y no se fecha ese proyecto por suposición.
 
 ## Adaptar el CV a cada vacante
 

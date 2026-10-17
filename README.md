@@ -8,7 +8,7 @@ Los datos y las traducciones se mantienen en `content.js`, compartido por las do
 
 Los archivos `cv-es.pdf`, `cv-en.pdf`, `cv-pt.pdf`, `carta-es.pdf`, `carta-en.pdf` y `carta-pt.pdf` son documentos generados: deben actualizarse cuando cambie el contenido o el formato del CV breve.
 
-Los datos adicionales provienen del texto de LinkedIn que compartió el titular. Se conserva su corrección: Asistente de Distribución termina en febrero de 2026. La investigación de maestría se presenta en desarrollo. Los resultados cuantitativos deben añadirse únicamente cuando se pueda confirmar su alcance, período y fuente.
+Los datos adicionales provienen del texto de LinkedIn y del PDF actualizado del perfil que compartió el titular. La residencia actual es La Paz; el puesto nacional figura en Santa Cruz. El PDF actualizado sitúa su inicio en febrero de 2026 y actualiza idiomas y disponibilidad. Los emisores y fechas de cursos nuevos que no aparecen en la fuente se dejan sin completar. Se conserva su corrección: Asistente de Distribución termina en febrero de 2026. La investigación de maestría se presenta en desarrollo. Los resultados cuantitativos deben añadirse únicamente cuando se pueda confirmar su alcance, período y fuente.
 
 ## Ejecutar localmente
 
@@ -17,6 +17,8 @@ Desde la carpeta del repositorio:
 ```sh
 python3 -m http.server 8001 --bind 127.0.0.1
 ```
+
+El CV breve selecciona los cursos más relacionados con la postulación; la portada conserva todos los cursos confirmados.
 
 El sitio no necesita instalación de paquetes ni un proceso de compilación. Comprobar la portada, la timeline, el cambio de idioma y `cv.html` en escritorio y móvil.
 

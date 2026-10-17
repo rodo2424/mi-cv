@@ -37,8 +37,9 @@ function render(){
  t.projects.forEach(([date,title,description])=>{const project=element('article',undefined,'resume-earlier');project.append(element('h3',title),element('p',date,'resume-date'),element('p',description));projects.append(project);});
  const studies=document.getElementById('resume-studies');studies.replaceChildren();
  t.studies.forEach(([level,title,date],index)=>{const study=element('p');study.append(element('strong',title),document.createTextNode(` · ${institutions[index]} · ${date}`));studies.append(study);});
+ studies.append(element('p',`${t.supplementaryTitle}: ${t.supplementaryTraining}`));
  const certificates=document.getElementById('resume-certificates');certificates.replaceChildren();
- t.certifications.forEach(([title,issuer,date])=>certificates.append(element('li',`${title} · ${issuer} · ${date}`)));
+ (t.applicationCertifications||t.certifications).forEach(parts=>certificates.append(element('li',parts.filter(Boolean).join(' · '))));
 }
 document.getElementById('language').addEventListener('click',event=>{
  const selected=event.target.closest('[data-language]')?.dataset.language;

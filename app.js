@@ -98,10 +98,11 @@ function render(){
  const certificates=document.getElementById('certificates');
  certificates.replaceChildren();
  t.certifications.forEach(([title,issuer,date])=>{
-  const item=el('li');item.append(el('strong',title),el('span',`${issuer} · ${date}`));certificates.append(item);
+  const item=el('li');item.append(el('strong',title));const details=[issuer,date].filter(Boolean).join(' · ');if(details)item.append(el('span',details));certificates.append(item);
  });
  const buttons=document.getElementById('skill-buttons');buttons.replaceChildren();t.skillNames.forEach((name,i)=>{const b=el('button',name);b.type='button';b.addEventListener('click',()=>{skill=i;renderSkill();});buttons.append(b);});renderSkill();
  const studies=document.getElementById('studies');studies.replaceChildren();t.studies.forEach((s,i)=>{const card=el('article',undefined,'study');card.append(el('p',s[0],'eyebrow'),el('h3',s[1]),el('p',institutions[i]),el('small',s[2]));studies.append(card);});
+ document.getElementById('supplementary-training').textContent=`${t.supplementaryTitle}: ${t.supplementaryTraining}`;
  document.querySelectorAll('.skill-print').forEach(n=>n.remove());t.skillNames.forEach((name,i)=>{const p=el('p',`${name}: ${t.skillText[i]}`,'skill-print');document.getElementById('skills').append(p);});
 }
 document.getElementById('language').addEventListener('click',event=>{
