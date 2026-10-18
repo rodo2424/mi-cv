@@ -21,3 +21,10 @@ nav>a:not(.brand){font-size:12px;text-decoration:none}
 
 .resume-availability{font-size:11px;color:var(--accent-deep);margin:10px 0 0}
 @media print{.resume-availability{font-size:8pt;margin-top:6px}}
+
+.resume-header{display:grid;grid-template-columns:minmax(0,1fr) 122px;gap:20px;align-items:start}
+.resume-header>.qr-panel{flex-direction:column;gap:6px;margin:0;padding:0;border:0;text-align:center;width:122px}
+.resume-header .qr-copy strong,.resume-header [data-key="qrHint"]{display:none}
+.resume-header .qr-copy .qr-url{font-size:9px;line-height:1.4}
+@media(max-width:760px){.resume-header{grid-template-columns:1fr}.resume-header>.qr-panel{width:auto;flex-direction:row;text-align:left}.resume-header .qr-copy strong,.resume-header [data-key="qrHint"]{display:block}}
+@media print{.resume-header{grid-template-columns:minmax(0,1fr) 32mm;gap:5mm}.resume-header>.qr-panel{width:32mm;flex-direction:column;margin:0;padding:0;text-align:center}.resume-header .qr-copy strong,.resume-header [data-key="qrHint"]{display:none}.resume-header .qr-copy .qr-url{font-size:7pt}}

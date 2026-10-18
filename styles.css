@@ -304,3 +304,14 @@ footer a { font-size: 13px; color: var(--accent-deep); }
 
 .availability{font:600 12px/1.6 Arial,sans-serif;color:var(--accent-deep)}
 .supplementary-training{font-size:12px;color:var(--muted);margin-top:24px}
+
+/* Local vector QR stays sharp when printed; its quiet zone is part of the image. */
+.qr-panel{display:flex;align-items:center;gap:18px;width:fit-content;max-width:100%;margin-top:26px;padding:12px 0;border-top:1px solid var(--line);text-decoration:none;break-inside:avoid}
+.qr-panel img{display:block;width:116px;height:116px;flex:0 0 116px}
+.qr-copy{display:flex;flex-direction:column;gap:6px;font:12px/1.55 Arial,sans-serif;min-width:0}
+.qr-copy strong{font:600 15px/1.35 Georgia,serif;color:var(--accent-deep)}
+.qr-copy>span{color:var(--muted)}
+.qr-copy .qr-url{font-size:11px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.qr-panel:hover .qr-url{color:var(--accent-deep)}
+@media(max-width:360px){.qr-panel{gap:10px}.qr-panel img{width:100px;height:100px;flex-basis:100px}.qr-copy{font-size:11px}}
+@media print{.qr-panel{margin-top:16px;padding:10px 0;gap:14px;break-inside:avoid}.qr-panel img{width:28mm;height:28mm;flex-basis:28mm}.qr-copy{font-size:9pt}.qr-copy strong{font-size:11pt}.qr-copy .qr-url{font-size:8pt}}

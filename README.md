@@ -35,3 +35,5 @@ El script utiliza Chromium en `/usr/bin/chromium` y el servidor local del puerto
 Publicar todos los archivos necesarios en la raíz de `main`: HTML, JavaScript, CSS y PDFs. GitHub Pages sirve el sitio desde esa rama.
 
 La guía `GUIA_POSTULACIONES.md` contiene sugerencias para adaptar el perfil a ofertas y preparar entrevistas; sus borradores de LinkedIn no se publicaron en la cuenta del titular.
+
+El QR de `assets/cv-qr.svg` codifica directamente `https://rodo2424.github.io/mi-cv/`. Es un recurso local compartido por la portada, el CV breve y la carta; no utiliza un servicio externo de redirección. Mantener el margen blanco del código y comprobar su lectura desde el PDF después de cambiar su tamaño o destino.
